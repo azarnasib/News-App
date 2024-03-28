@@ -3,8 +3,7 @@ import {View, Text, StyleSheet, ActivityIndicator,ScrollView, Image,Dimensions} 
 import { COLORS } from "../../Utils/Colors";
 import { fetchNewsBasedOnText } from "../../Utils/Api";
 import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
-//import { Ionicons } from "@expo/vector-icons";hhhhhhhhr
-import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 
 const { width } = Dimensions.get("window");
@@ -37,7 +36,7 @@ const Home = (props) => {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Discover Today </Text>
 
-      <Icon name="rocket" size={30} color="white" />
+      
       {loading ? (
         <ActivityIndicator size="large" color={COLORS.secondary} />
       ) : (
